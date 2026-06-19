@@ -1,86 +1,85 @@
 # Student Segmentation and Personalized Course Recommendation System for EduPro
 
-##Background and Context:
+## Background and Context:
 
-Online learners are not homogeneous:
+- Online learners are not homogeneous:
 
-  • Some explore beginner courses across domains
+  - Some explore beginner courses across domains
 
-  • Some specialize deeply in one subject
+  - Some specialize deeply in one subject
 
-  • Others focus on career-oriented certifications
+  - Others focus on career-oriented certifications
 
-Generic course recommendations fail to:
+- Generic course recommendations fail to:
 
-  • Maximize learner engagement
+  - Maximize learner engagement
 
-  • Improve course completion
+  - Improve course completion
 
-  • Build long-term platform loyalty
+  - Build long-term platform loyalty
 
-EduPro needs a data-driven personalization engine to:
+- EduPro needs a data-driven personalization engine to:
 
-  • Understand different learner types
+  - Understand different learner types
 
-  • Recommend relevant courses
+  - Recommend relevant courses
 
-  • Support personalized learning journeys
+  - Support personalized learning journeys
 
-##Problem Statement
+## Problem Statement
 
-EduPro currently faces:
+- EduPro currently faces:
 
-  • One-size-fits-all course recommendations
+  - One-size-fits-all course recommendations
+ 
+  - Limited understanding of learner behavior patterns
 
-  • Limited understanding of learner behavior patterns
+  - No structured learner segmentation framework
 
-  • No structured learner segmentation framework
+- As a result: 
 
-As a result: 
+  - Learners struggle to discover relevant content  
 
-  ● Learners struggle to discover relevant content  
+  - Engagement and retention opportunities are lost
 
-  ● Engagement and retention opportunities are lost
+## Dataset Fields Utilized (High-Dimensional)
 
-##Dataset Fields Utilized (High-Dimensional)
+- Users Sheet
 
-Users Sheet
+  - UserID
 
-  • UserID
+  - Age
 
-  • Age
+  - Gender
 
-  • Gender
+- Courses Sheet
 
-Courses Sheet
+  - CourseID
 
-  • CourseID
+  - CourseCategory
 
-  • CourseCategory
+  - CourseType
 
-  • CourseType
+  - CourseLevel
 
-  • CourseLevel
+  - CourseRating
 
-  • CourseRating
+- Transactions Sheet
 
-Transactions Sheet
+  - UserID
 
-  • UserID
+  - CourseID
 
-  • CourseID
+  - TransactionDate
 
-  • TransactionDate
+  - Amount
 
-  • Amount
+## Feature Engineering
 
-##Feature Engineering
+- Key engineered learner-level features include:
 
-Key engineered learner-level features include:
-
-Engagement Features
-
-  • Total courses enrolled
+ - Engagement Features
+    - Total courses enrolled
 
   • Average courses per category
 
@@ -102,7 +101,7 @@ Behavioral Features
 
   • Learning depth index (beginner vs advanced ratio)
 
-##Data Science Methodology (Step-by-Step)
+## Data Science Methodology (Step-by-Step)
 
 Learner-Level Aggregation
 
@@ -140,7 +139,7 @@ Build cluster-aware recommendations using:
 
   • Rating-weighted relevance
 
-##Evaluation & Validation
+## Evaluation & Validation
 
 <img width="1408" height="526" alt="image" src="https://github.com/user-attachments/assets/c493a1a4-e6bc-4016-a634-e389946432ea" />
 
@@ -165,7 +164,7 @@ User Capabilities
 
   • Filter recommendations by level or category
 
-##Deliverables and Submission
+## Deliverables and Submission
 
   • Research paper (EDA, insights, recommendations)
 
@@ -173,6 +172,6 @@ User Capabilities
 
   • Executive summary for government stakeholders
 
-##Conclusion
+## Conclusion
 
 This project introduces student-centric intelligence to the EduPro platform. By shifting focus from predicting course demand to understanding and personalizing the learner journey, it enables EduPro to deliver meaningful, adaptive, and engaging learning experiences, making it completely different in purpose and methodology
