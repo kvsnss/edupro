@@ -1,13 +1,9 @@
 # Student Segmentation and Personalized Course Recommendation System for EduPro
 
 ## Background and Context:
-
 - Online learners are not homogeneous:
-
   - Some explore beginner courses across domains
-
   - Some specialize deeply in one subject
-
   - Others focus on career-oriented certifications
 
 - Generic course recommendations fail to:
