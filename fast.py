@@ -74,7 +74,7 @@ with col1:
     if "Cluster" in segments.columns:
         st.metric(
             "Segment",
-            int(student["Cluster"])
+            int(student["Cluster"].iloc[0])
         )
 
 with col2:
