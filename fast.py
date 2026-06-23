@@ -11,14 +11,29 @@ layout="wide"
 
 # Load Data
 
-BASE_DIR = Path(__file__).resolve().parent
+def load_data():
 
-DATA_DIR = BASE_DIR / "data"
+    users = pd.read_csv("EduPro Online Platform.xlsx - Users.csv")
 
-users = pd.read_csv(DATA_DIR / "EduPro Online Platform.xlsx - Users.csv")
-courses = pd.read_csv(DATA_DIR / "EduPro Online Platform.xlsx - Courses.csv")
-transactions = pd.read_csv(DATA_DIR / "EduPro Online Platform.xlsx - Transactions.csv")
-segments = pd.read_csv(DATA_DIR / "student_segments.csv")
+    courses = pd.read_csv("EduPro Online Platform.xlsx - Courses.csv")
+
+    transactions = pd.read_csv("EduPro Online Platform.xlsx - Transactions.csv")
+
+    segments = pd.read_csv("Student_Segments.csv")
+
+    return (
+
+    users,
+
+    courses,
+
+    transactions,
+
+    segments
+
+)
+
+users,courses,transactions,segments = load_data()
 # Sidebar
 
 st.sidebar.title("EduPro Dashboard")
