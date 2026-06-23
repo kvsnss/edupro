@@ -198,7 +198,7 @@ if student_df.empty:
 # Get cluster value (IMPORTANT)
 
 user_cluster = int(
-    student_df["Cluster"]
+    student_df["Cluster"].iloc[0]
 )
 
 st.write(f"Current Learner Cluster: {user_cluster}")
